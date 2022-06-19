@@ -18,6 +18,6 @@
         android:icon="@drawable/ic_baseline_blog_24"/>
     <item
         android:id="@+id/contact"
-        android:title="Contact Us"
+        android:title="Contact Me"
         android:icon="@drawable/ic_baseline_contact_24"/>
 </menu>
