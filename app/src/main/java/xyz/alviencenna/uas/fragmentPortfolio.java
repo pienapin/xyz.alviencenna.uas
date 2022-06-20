@@ -17,6 +17,14 @@ import xyz.alviencenna.uas.Adapter.GridAdapterPort;
 public class fragmentPortfolio extends Fragment {
 
     private GridView gridViewPort;
+    Integer[] port = {
+            R.drawable.nft_square_like_imperfect_circle,
+            R.drawable.nft_infinite_imperfect_circle,
+            R.drawable.nft_potato_like_imperfect_circle,
+            R.drawable.nft_pointy_imperfect_circle,
+            R.drawable.nft_tall_imperfect_circle,
+            R.drawable.nft_unconnected_imperfect_circle
+    };
 
     public fragmentPortfolio() {
 
@@ -38,7 +46,7 @@ public class fragmentPortfolio extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         // Portfolio stuff
         gridViewPort = getView().findViewById(R.id.gridViewPort);
-        gridViewPort.setAdapter(new GridAdapterPort(this.getActivity()));
+        gridViewPort.setAdapter(new GridAdapterPort(this.getActivity(), port, 500, 500));
         gridViewPort.setOnItemClickListener((parent, v, position, id) -> {
             Uri uri = null;
             switch (position) {

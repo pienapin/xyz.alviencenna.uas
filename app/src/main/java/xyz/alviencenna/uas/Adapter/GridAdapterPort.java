@@ -12,23 +12,19 @@ public class GridAdapterPort extends BaseAdapter {
 
     private static final String TAG = "GridAdapterPort";
     private Context mContext;
+    Integer[] portfolio;
+    int width, height;
 
-    public GridAdapterPort(Context mContext) {
+    public GridAdapterPort(Context mContext, Integer[] port, int width, int height) {
         this.mContext = mContext;
+        this.portfolio = port;
+        this.width = width;
+        this.height = height;
     }
-
-    public Integer[] port = {
-            R.drawable.nft_square_like_imperfect_circle,
-            R.drawable.nft_infinite_imperfect_circle,
-            R.drawable.nft_potato_like_imperfect_circle,
-            R.drawable.nft_pointy_imperfect_circle,
-            R.drawable.nft_tall_imperfect_circle,
-            R.drawable.nft_unconnected_imperfect_circle
-    };
 
     @Override
     public int getCount() {
-        return port.length;
+        return portfolio.length;
     }
 
     @Override
@@ -44,10 +40,10 @@ public class GridAdapterPort extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ImageView imageView = new ImageView(mContext);
-        imageView.setLayoutParams(new ViewGroup.LayoutParams(500, 500));
+        imageView.setLayoutParams(new ViewGroup.LayoutParams(width, height));
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setPadding(8, 8, 8, 8);
-        imageView.setImageResource(port[i]);
+        imageView.setImageResource(portfolio[i]);
         return imageView;
     }
 }

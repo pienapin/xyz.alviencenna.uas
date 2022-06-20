@@ -7,17 +7,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import xyz.alviencenna.uas.Adapter.GridAdapter;
+import xyz.alviencenna.uas.Adapter.GridAdapterPort;
 
 public class fragmentHome extends Fragment {
 
     private GridView gridView;
+    Integer[] port = {
+            R.drawable.nft_square_like_imperfect_circle,
+            R.drawable.nft_infinite_imperfect_circle,
+            R.drawable.nft_potato_like_imperfect_circle,
+            R.drawable.nft_pointy_imperfect_circle,
+            R.drawable.nft_tall_imperfect_circle,
+            R.drawable.nft_unconnected_imperfect_circle
+    };
 
     public fragmentHome() {
 
@@ -26,13 +33,11 @@ public class fragmentHome extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
 
@@ -42,7 +47,7 @@ public class fragmentHome extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         // Portfolio stuff
         gridView = getView().findViewById(R.id.gridView);
-        gridView.setAdapter(new GridAdapter(this.getActivity()));
+        gridView.setAdapter(new GridAdapterPort(this.getActivity(), port, 300, 300));
         gridView.setOnItemClickListener((parent, v, position, id) -> {
             Uri uri = null;
             switch (position) {
