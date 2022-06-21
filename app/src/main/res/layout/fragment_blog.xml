@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fragmentContact">
 
     <TextView
@@ -16,4 +17,13 @@
         android:textAlignment="center"
         android:textSize="24sp"/>
 
-</RelativeLayout>
+    <GridView
+        android:id="@+id/gridViewBlog"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="20dp"/>
+
+</LinearLayout>

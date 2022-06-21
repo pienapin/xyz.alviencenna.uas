@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/thumbnailblog"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleblog"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Judul Blog (10 Sistem Operasi Rekomendasi blablabla lorem ipsum"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/postedby"
+            android:layout_gravity="center"
+            android:text="Posted by pien"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentblog"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:text="Ini konten Ini kontenIni kontenIni kontenIni kontenIni kontenIni kontenIni kontenIni kontenIni kontenIni kontenIni kontenIni konten"
+            android:justificationMode="inter_word"/>
+    </LinearLayout>
+
+</RelativeLayout>
