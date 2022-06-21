@@ -92,7 +92,7 @@
                     android:id="@+id/gridView"
                     android:layout_marginVertical="12dp"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="240dp"
                     android:columnWidth="175dp"
                     android:numColumns="3"
                     android:verticalSpacing="10dp"
@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="#0A0A0A"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginBottom="12dp"
                 android:padding="24dp">
 
@@ -212,7 +212,7 @@
 
                         <EditText
                             android:textColor="@color/black"
-                            android:theme="@style/ThemeOverlay.AppCompat"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"
                             android:id="@+id/cnt_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
@@ -227,7 +227,7 @@
                         <EditText
                             android:textColor="@color/black"
                             android:id="@+id/cnt_email"
-                            android:theme="@style/ThemeOverlay.AppCompat"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
 
@@ -241,7 +241,7 @@
                         <EditText
                             android:textColor="@color/black"
                             android:id="@+id/cnt_subject"
-                            android:theme="@style/ThemeOverlay.AppCompat"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
 
@@ -255,7 +255,7 @@
                         <EditText
                             android:textColor="@color/black"
                             android:id="@+id/cnt_message"
-                            android:theme="@style/ThemeOverlay.AppCompat"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"
                             android:inputType="textMultiLine"
                             android:lines="8"
                             android:minLines="6"
