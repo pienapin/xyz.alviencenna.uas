@@ -14,6 +14,31 @@
         android:theme="@style/Theme.UAS"
         tools:targetApi="31">
         <activity
+            android:name=".ArtikelSatu"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelDua"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelTiga"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelEmpat"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelLima"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelEnam"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelTujuh"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelDelapan"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

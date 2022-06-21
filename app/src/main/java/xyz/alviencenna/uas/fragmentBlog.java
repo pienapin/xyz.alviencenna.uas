@@ -1,6 +1,7 @@
 package xyz.alviencenna.uas;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -75,10 +76,41 @@ public class fragmentBlog extends Fragment {
         gridViewBlog = getView().findViewById(R.id.gridViewBlog);
         gridViewBlog.setAdapter(new GridAdapterBlog(this.getActivity(), thumbnailblog, titleblog, contentblog));
         gridViewBlog.setOnItemClickListener((parent, v, position, id) -> {
+            Intent intent = null;
             switch (position) {
-                case 0:
+                    case 0:
+                        intent = new Intent(this.getActivity(), ArtikelSatu.class);
+                    break;
 
+                    case 1:
+                        intent = new Intent(this.getActivity(), ArtikelDua.class);
+                    break;
+
+                    case 2:
+                        intent = new Intent(this.getActivity(), ArtikelTiga.class);
+                    break;
+
+                    case 3:
+                        intent = new Intent(this.getActivity(), ArtikelEmpat.class);
+                    break;
+
+                    case 4:
+                        intent = new Intent(this.getActivity(), ArtikelLima.class);
+                    break;
+
+                    case 5:
+                        intent = new Intent(this.getActivity(), ArtikelEnam.class);
+                    break;
+
+                    case 6:
+                        intent = new Intent(this.getActivity(), ArtikelTujuh.class);
+                    break;
+
+                    case 7:
+                        intent = new Intent(this.getActivity(), ArtikelDelapan.class);
+                    break;
             }
+                    startActivity(intent);
         });
     }
 }
