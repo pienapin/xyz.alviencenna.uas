@@ -3,16 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/collegium/AndroidProject/xyz.alviencenna.uas/app/src/main/res/layout/activity_main.xml" value="0.16798245614035087" />
-        <entry key="..\:/collegium/AndroidProject/xyz.alviencenna.uas/app/src/main/res/layout/fragment_about.xml" value="0.22" />
-        <entry key="..\:/collegium/AndroidProject/xyz.alviencenna.uas/app/src/main/res/layout/fragment_blog.xml" value="0.38333333333333336" />
-        <entry key="..\:/collegium/AndroidProject/xyz.alviencenna.uas/app/src/main/res/layout/fragment_contact_us.xml" value="0.38697916666666665" />
-        <entry key="..\:/collegium/AndroidProject/xyz.alviencenna.uas/app/src/main/res/layout/fragment_home.xml" value="0.2391304347826087" />
-        <entry key="..\:/collegium/AndroidProject/xyz.alviencenna.uas/app/src/main/res/layout/fragment_portfolio.xml" value="0.38697916666666665" />
-        <entry key="..\:/collegium/AndroidProject/xyz.alviencenna.uas/app/src/main/res/layout/gridblog.xml" value="0.32587719298245615" />
-        <entry key="..\:/collegium/AndroidProject/xyz.alviencenna.uas/app/src/main/res/menu/drawermenu.xml" value="0.38697916666666665" />
         <entry key="..\:/dataapin/UAS/UAS/app/src/main/res/layout/activity_main.xml" value="0.196875" />
         <entry key="..\:/dataapin/UAS/UAS/app/src/main/res/layout/fragment_home.xml" value="0.16578947368421051" />
+        <entry key="app/src/main/res/layout/activity_artikel_delapan.xml" value="0.16621376811594202" />
+        <entry key="app/src/main/res/layout/activity_artikel_dua.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_artikel_empat.xml" value="0.16621376811594202" />
+        <entry key="app/src/main/res/layout/activity_artikel_enam.xml" value="0.16621376811594202" />
+        <entry key="app/src/main/res/layout/activity_artikel_lima.xml" value="0.16621376811594202" />
+        <entry key="app/src/main/res/layout/activity_artikel_satu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_artikel_tiga.xml" value="0.16621376811594202" />
+        <entry key="app/src/main/res/layout/activity_artikel_tujuh.xml" value="0.16621376811594202" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1743659420289855" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.17074275362318841" />
+        <entry key="app/src/main/res/layout/fragment_blog.xml" value="0.17074275362318841" />
+        <entry key="app/src/main/res/layout/fragment_contact_us.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.15443840579710144" />
       </map>
     </option>
   </component>

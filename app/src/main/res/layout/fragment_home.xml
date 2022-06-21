@@ -101,6 +101,186 @@
                     android:gravity="center"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#0A0A0A"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blog"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+                <GridView
+                    android:id="@+id/gridViewBlog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="20dp"/>
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    tools:context=".fragmentContact">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginBottom="28dp"
+                        android:text="Contact Me"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:padding="18dp"
+                        android:textAlignment="center"
+                        android:text="Jika kurang senang dengan konten saya, anda dapat menghubungi saya melalui platform di bawah ini :"
+                        />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:id="@+id/tv_instagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Instagram : pie._n"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:id="@+id/tv_twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Twitter : oneplusnineteen"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginVertical="12dp"
+                        android:textAlignment="center"
+                        android:text="atau melalui form di bawah :"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Your name"/>
+
+                        <EditText
+                            android:textColor="@color/black"
+                            android:theme="@style/ThemeOverlay.AppCompat"
+                            android:id="@+id/cnt_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Your email"/>
+
+                        <EditText
+                            android:textColor="@color/black"
+                            android:id="@+id/cnt_email"
+                            android:theme="@style/ThemeOverlay.AppCompat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Your Subject"/>
+
+                        <EditText
+                            android:textColor="@color/black"
+                            android:id="@+id/cnt_subject"
+                            android:theme="@style/ThemeOverlay.AppCompat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Your Message (Optional)"/>
+
+                        <EditText
+                            android:textColor="@color/black"
+                            android:id="@+id/cnt_message"
+                            android:theme="@style/ThemeOverlay.AppCompat"
+                            android:inputType="textMultiLine"
+                            android:lines="8"
+                            android:minLines="6"
+                            android:gravity="top|start"
+                            android:maxLines="10"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:scrollbars="vertical"/>
+
+                        <Button
+                            android:id="@+id/cnt_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Submit"
+                            android:paddingVertical="12dp"
+                            android:paddingHorizontal="24dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
         </LinearLayout>
 
 </ScrollView>
